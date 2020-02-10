@@ -25,7 +25,7 @@ submitBtn.addEventListener('click', (event) => {
     } else{
         output.value = `The ${document.getElementById('input-adj').value} ${document.getElementById('input-person').value} was walking down the road when
         (s)he saw the old man ${document.getElementById('input-verb').value}. (S)He joined the old man in ${document.getElementById('input-verb').value}, 
-        and once ${document.getElementById('input-plural-pronoun').value} finished, ${document.getElementById('input-plural-pronoun').value} started  ${document.getElementById('input-plural-verb').value}`;
+        and once ${document.getElementById('input-plural-pronoun').value} finished, ${document.getElementById('input-plural-pronoun').value} started ${document.getElementById('input-plural-verb').value}.`;
         return;
 
     }

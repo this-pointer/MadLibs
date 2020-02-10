@@ -1,11 +1,52 @@
 *{
+    margin: 0px;
+    padding: 0px;
     text-align: center;
 }
 #output{
     margin: 20px;
-    width: 300px;
-    height: 300px;
+    width: 40vw;
+    height: 30vh;
+    flex: auto;
 }
-.jumbotron{
+.jumbotron-fluid{
     background: linear-gradient(#e66465, #9198e5);
+    width: 100vw;
+    margin: auto;
+    padding-top: 0.5rem;
+}
+.container-fluid{
+    padding: 0px;
+}
+#main-header{
+    margin: 0px;
+    padding: 19px;
+    background-color: dodgerblue;
+    color: white;
+}
+.form-control{
+    width: 30vw;
+    margin: auto;
+    padding: 2rem 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#input-person{
+    margin-top: 5px;
+}
+button{
+    color: white;
+    padding: 0.7rem 2rem;
+    background-color: dodgerblue;
+    margin: 0px;
+    border: none;
+}
+button:hover{
+    color: lightgray;
+    background-color: rgb(0, 119, 255);
+}
+#main-footer{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: white;
 }
