@@ -15,6 +15,9 @@ function reset(){
         inputs[i].value = '';
     }
 }
+
+
+
 let submitBtn = document.getElementById('submit-button');
 submitBtn.addEventListener('click', (event) => {
     let output = document.getElementById('output');
@@ -23,6 +26,14 @@ submitBtn.addEventListener('click', (event) => {
         output.value = 'Please fill all fields and try again';
         return;
     } else{
+        var opacity = 0;
+        function MyFadeFunction() {
+           if (opacity<1) {
+              opacity += .1;
+              setTimeout(function(){MyFadeFunction()},100);
+           }
+           document.getElementById('output').style.opacity = opacity;
+        }
         output.value = `The ${document.getElementById('input-adj').value} ${document.getElementById('input-person').value} was walking down the road when
         (s)he saw the old man ${document.getElementById('input-verb').value}. (S)He joined the old man in ${document.getElementById('input-verb').value}, 
         and once ${document.getElementById('input-plural-pronoun').value} finished, ${document.getElementById('input-plural-pronoun').value} started ${document.getElementById('input-plural-verb').value}.`;

@@ -50,3 +50,12 @@ button:hover{
     padding: 0.5rem;
     color: white;
 }
+@keyframes fade-in{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+body{
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
