@@ -27,10 +27,10 @@ submitBtn.addEventListener('click', (event) => {
         return;
     } else{
         var opacity = 0;
-        function MyFadeFunction() {
+        function fadeAnimation() {
            if (opacity<1) {
               opacity += .1;
-              setTimeout(function(){MyFadeFunction()},100);
+              setTimeout(() => {fadeAnimation()},100);
            }
            document.getElementById('output').style.opacity = opacity;
         }
